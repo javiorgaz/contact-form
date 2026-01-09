@@ -28,18 +28,18 @@
         <!-- left  -->
         <div>
           <label for="first-name">First Name</label>
-          <input id="first-name" type="text" />
+          <input id="first-name" type="text" required/>
         </div>
         <!-- right  -->
         <div>
           <label for="last-name">Last Name</label>
-          <input id="last-name" type="text" />
+          <input id="last-name" type="text" required/>
         </div>
       </div>
       <!-- email  -->
       <div class="email-container">
         <label for="email">Email Address</label>
-        <input id="email" type="email" />
+        <input id="email" type="email" required/>
       </div>
       <!-- query type  -->
 
@@ -51,7 +51,7 @@
             <label for="general">General Enquiry</label>
           </div>
           <div class="query-type__option">
-            <input id="support" name="query-type" type="radio" />
+            <input id="support" name="query-type" type="radio"/>
             <label for="support">Support Request</label>
           </div>
         </div>
@@ -63,10 +63,11 @@
       </div>
 
       <div class="consent">
-        <input id="consent" type="checkbox" />
+        <input id="consent" type="checkbox" required/>
         <label for="consent">I consent to being contacted by the team *</label>
       </div>
       <button class="submit" type="submit">Submit</button>
     </form>
+    <script src="app.js"></script>
   </body>
 </html>
