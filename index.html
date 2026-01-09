@@ -1,52 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Contact form</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Contact form</title>
+  </head>
+  <body>
+    <form class="form" action="#">
+      <h1>Contact Us</h1>
+      <div class="first-last-name">
+        <!-- left  -->
+        <div>
+          <label for="first-name">First Name</label>
+          <input id="first-name" type="text" />
+        </div>
+        <!-- right  -->
+        <div>
+          <label for="last-name">Last Name</label>
+          <input id="last-name" type="text" />
+        </div>
+      </div>
+      <!-- email  -->
+      <div class="email-container">
+        <label for="email">Email Address</label>
+        <input id="email" type="email" />
+      </div>
+      <!-- query type  -->
 
-  Contact Us
+      <div class="query-type-container">
+        <label>Query Type *</label>
+        <div class="query-type">
+          <div class="query-type__option">
+            <input id="general" name="query-type" type="radio"/>
+            <label for="general">General Enquiry</label>
+          </div>
+          <div class="query-type__option">
+            <input id="support" name="query-type" type="radio" />
+            <label for="support">Support Request</label>
+          </div>
+        </div>
+      </div>
+      <!-- message  -->
+      <div class="message-container">
+        <label for="message">Message</label>
+        <textarea rows="3" name="" id="message"></textarea>
+      </div>
 
-  First Name
-  This field is required
-
-  Last Name
-  This field is required
-
-  Email Address
-  Please enter a valid email address
-  This field is required
-
-  Query Type
-  General Enquiry
-  Support Request
-  Please select a query type
-
-  Message
-  This field is required
-
-  I consent to being contacted by the team
-  To submit this form, please consent to being contacted
-
-  Submit
-
-  Message Sent!
-  Thanks for completing the form. We'll be in touch soon!
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+      <div class="consent">
+        <input id="consent" type="checkbox" />
+        <label for="consent">I consent to being contacted by the team *</label>
+      </div>
+      <button class="submit" type="submit">Submit</button>
+    </form>
+  </body>
 </html>

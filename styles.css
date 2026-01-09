@@ -1,0 +1,137 @@
+:root {
+  --Green200 :(lighter): hsl(148, 38%, 91%);
+  --Green600 :(medium): hsl(169, 82%, 27%);
+  --Red: hsl(0, 66%, 54%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Karla";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #DBEBE2;
+}
+
+/* GENERAL FORM */
+
+label {
+  font-size: 0.9rem;
+  color: rgb(92, 92, 92);
+  display: inline-block;
+  margin-bottom:6px;
+}
+
+input, textarea {
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  border-radius: 7px;
+  padding: 0.8rem 1.2rem;
+  border: 1px solid rgb(92, 92, 92);
+}
+
+input[type = "radio"],
+input[type = "checkbox"] {
+  width: auto;
+}
+
+.form {
+  width: 70%;
+  border-radius: 9px;
+  max-width: 700px;
+  min-width: 400px;
+  padding: 25px;
+  background-color: white;
+}
+
+/* first last name  */
+.first-last-name {
+  display: flex;
+  gap: 1rem;
+  margin-top: 15px;
+}
+
+.first-last-name > * {
+  flex: 1 1 auto;
+}
+
+/* email  */
+.email-container {
+  margin-top: 15px;
+}
+
+/* query type  */
+.query-type {
+  display: flex;
+  gap: 1rem;
+}
+
+.query-type-container {
+  margin-top: 15px;
+}
+
+.query-type__option {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 10px 20px;
+  border: 1px solid black;
+  flex: 1 1 auto;
+  margin: 5px 0;
+  border-radius: 7px;
+}
+
+.query-type__option input{
+  transform: scale(1.4);
+}
+ 
+.query-type__option label {
+  margin: 0;
+  font-size: 1rem;
+}
+/* message  */
+textarea {
+  max-width: 100%;
+  border-radius: 7px;
+}
+
+.message-container {
+  margin-top: 15px;
+}
+
+/* consent  */
+.consent {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 30px 0;
+}
+
+.consent input {
+  transform: scale(1.1);
+}
+
+.consent label {
+  margin: 0;
+}
+
+/* submit  */
+.submit {
+  display: inline-block;
+  width: 100%;
+  background-color: #0C7D69;
+  border: none;
+  padding  :15px;
+  border-radius: 7px;
+  color: white;
+  letter-spacing: 2px;
+  font-family: inherit;
+  cursor: pointer;
+}
