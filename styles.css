@@ -22,7 +22,7 @@ body {
 /* GENERAL FORM */
 
 .selected {
-  background-color: lightgreen;
+  background-color: rgba(114, 204, 114, 0.377);
 }
 
 label {
@@ -143,4 +143,43 @@ textarea {
   letter-spacing: 2px;
   font-family: inherit;
   cursor: pointer;
+  font-size: 0.9rem;
+}
+
+
+/* TOAST  */
+.toast {
+  position: absolute;
+  display: none;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation-name: toastIn;
+  animation-duration: 400ms;
+  background-color: #2A4244;
+  padding: 20px;
+  border-radius: 15px;
+  color: white;
+}
+
+.toast .heading {
+  display: flex;
+  gap: 10px;
+  font-weight: 700;
+}
+
+.toast .heading__icon {
+  transform: scale(0.9);
+}
+
+.toast .text {
+  margin-top: 8px;
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+
+@keyframes toastIn {
+  0%   { transform: translate(-50%, -120px); }
+  100% { transform: translate(-50%, 0); }
+
 }
